@@ -67,7 +67,7 @@ internal class Program
                     case 5:
                         Console.WriteLine();
                         // Show Journal Summary
-                        Console.WriteLine("These are your statistics:");
+                        Console.WriteLine("These are your Journal statistics:");
                         journal.DisplayJournalSummary();
                         break;
 

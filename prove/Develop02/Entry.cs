@@ -13,6 +13,7 @@ public class Entry
         _entryText = entryText;
     }
 
+    // Creation of Display
     public void Display()
     {
         Console.WriteLine($"Date: {Date}");

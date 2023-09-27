@@ -27,8 +27,8 @@ public class PromptGenerator
     // Method to get a random question from the list.
     public string GetRandomPrompt()
     {
-        Random rand = new Random();
-        int index = rand.Next(0, _prompts.Count);
+        Random random = new Random();
+        int index = random.Next(0, _prompts.Count);
         return _prompts[index];
     }
 }
