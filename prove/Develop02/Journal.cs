@@ -52,4 +52,22 @@ public class Journal
             }
         }
     }
+
+    public void DisplayJournalSummary()
+    {
+        if (_entries.Count > 0)
+        {
+            JournalSummary summary = new JournalSummary(_entries);
+
+        int totalEntries = summary.GetTotalEntries();
+        int mostActiveDay = summary.GetMostActiveDay();
+        Console.WriteLine($"Total entries: {totalEntries}");
+        Console.WriteLine($"Most active day: {mostActiveDay}");
+        Console.WriteLine();
+        }
+
+        else{
+            Console.WriteLine("Upps, you need to load your journal first or add some entries.");
+        }
+    }
 }
